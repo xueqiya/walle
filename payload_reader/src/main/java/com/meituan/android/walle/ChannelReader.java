@@ -66,4 +66,8 @@ public final class ChannelReader {
     public static String getRaw(final File apkFile) {
         return  PayloadReader.getString(apkFile, ApkUtil.APK_CHANNEL_BLOCK_ID);
     }
+
+    public static byte[] getBytes(final File apkFile) {
+        return  PayloadReader.getBytes(apkFile, 123);
+    }
 }

@@ -33,6 +33,11 @@ public final class PayloadReader {
         return null;
     }
 
+    public static byte[] getBytes(final File apkFile, final int id) {
+        final byte[] bytes = PayloadReader.get(apkFile, id);
+        return bytes;
+    }
+
     /**
      * get bytes by id <br/>
      *
